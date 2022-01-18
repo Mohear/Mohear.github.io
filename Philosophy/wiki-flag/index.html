@@ -378,33 +378,6 @@
   });
 </script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-<script type="text/javascript">
-  var dom = document.getElementById("categories-echarts");
-  var categoriesChart = echarts.init(dom);
-  var app = {};
-  var option;
-
-
-<!-- 核心关键 -->
-  
-
-
-  option = {
-    series: [{
-      name: '分类统计',
-      type: 'pie',
-      radius: '55%',
-      data: [{"name":"自言自语","value":1},{"name":"Philosophy","value":2}]
-    }],
-      tooltip: {}
-  };
-
-  if (option && typeof option === 'object') {
-    categoriesChart.setOption(option);
-  }
-</script>
-
   <!-- 代码高亮插件 -->
 
 <script src="/lib/enlighterjs.min.js"></script>
